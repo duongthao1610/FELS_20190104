@@ -16,3 +16,5 @@ lessons:
   none: ""
   check_square: "check-square"
   square: "square"
+courses:
+  popular_course: 3
