@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   devise_for :users
   resources :words, only: [:index]
   resources :courses, only: [:index]
+  resources :lessons, only: [:index]
 end

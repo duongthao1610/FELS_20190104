@@ -1,6 +1,6 @@
-user_1 = User.create! email: "user1@example.com", password:"111111"
-user_2 = User.create! email: "user2@example.com", password:"111111"
-user_3 = User.create! email: "user3@example.com", password:"111111"
+User.create! email: "user1@example.com", password:"111111"
+User.create! email: "user2@example.com", password:"111111"
+User.create! email: "user3@example.com", password:"111111"
 
 Course.create!  name: "Basic 1",
                 description: "Description: Basic 1",
@@ -13,6 +13,18 @@ Course.create!  name: "Basic 2",
 Course.create!  name: "Basic 3",
                 description: "Description: Basic 3",
                 image: "course_3.jpg"
+
+Course.create!  name: "Basic 4",
+                description: "Description: Basic 4",
+                image: "course_4.jpg"
+
+Course.create!  name: "Basic 5",
+                description: "Description: Basic 5",
+                image: "course_5.jpg"
+
+Course.create!  name: "Basic 6",
+                description: "Description: Basic 6",
+                image: "course_6.jpg"
 
 Word.create!  content: "Apple",
               course_id: 1
@@ -71,9 +83,9 @@ WordAnswer.create!  content: "Công an",
                     correct: false,
                     word_id: 3
 
-20.times do |n|
+30.times do |n|
   Word.create!  content: "Word #{n+1}",
-                course_id: rand(1..3)
+                course_id: rand(1..6)
   WordAnswer.create!  content: "Answer #{n+1} true",
                       correct: true,
                       word_id: n+4
@@ -88,13 +100,27 @@ WordAnswer.create!  content: "Công an",
                       word_id: n+4
 end
 
-user_1.lessons.create(course_id: 1, results: 20)
+Lesson.create!  user_id: 1,
+                course_id: 1,
+                results: 20
 
-user_1.lessons.create(course_id: 2, results: 30)
+Lesson.create!  user_id: 1,
+                course_id: 2,
+                results: 30
 
-user_2.lessons.create(course_id: 2, results: 30)
+Lesson.create!  user_id: 2,
+                course_id: 2,
+                results: 30
 
-user_3.lessons.create(course_id: 3, results: 30)
+Lesson.create!  user_id: 3,
+                course_id: 3,
+                results: 30
+
+10.times do |n|
+  Lesson.create!  user_id: rand(1..3),
+                  course_id: rand(1..6),
+                  results: rand(20..50)
+end
 
 1.upto 10 do |n|
   LessonAnswer.create!  word_answer_id: n*4-1,
