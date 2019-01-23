@@ -96,3 +96,55 @@ h2.headertekst {
 .drop-list{
   margin-left: 10%;
 }
+
+.btn-start{
+  margin-left: 85%;
+  margin-top: 85%;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.lesson-title{
+  text-align: center;
+}
+
+.lesson-answer{
+  width: 50%;
+  margin-top: 4%;
+  margin-left: 27%;
+}
+
+.word-answers{
+  box-shadow: 0 1px 20px rgba(3, 7, 146, 0.1);
+}
+
+.list-answers{
+  margin: 2% 0% 5% 4%;
+  font-size: 20px;
+}
+
+.content-word{
+  margin-left: 5%;
+  padding-top: 3%;
+  text-align: center;
+  color: #55555a;
+  font-size: 38px;
+  font-weight: 250px;
+}
+
+.fa-question-circle{
+  font-size: 42px;
+  color: #14bdee;
+}
+
+.btn-next{
+  text-align: center;
+}
+
+.btn-done{
+  text-align: center;
+}

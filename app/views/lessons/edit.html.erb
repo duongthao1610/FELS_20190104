@@ -1,0 +1,19 @@
+<% provide :title, "Learn a lesson" %>
+<h1 class="lesson-title"> Learn a lesson </h1>
+<div class="row">
+  <div class="lesson-answer">
+    <div class="slideshow-container">
+      <%= form_for @lesson do |f| %>
+        <%= f.fields_for :lesson_answers do |ff| %>
+          <%= render "lesson_answer", :f => ff %>
+        <% end %>
+        <div class="btn-done">
+          <%= f.submit "Submit", class: "btn btn-primary"%>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="btn-next">
+  <%= button_tag "Next", class: "btn btn-primary" %>
+</div>

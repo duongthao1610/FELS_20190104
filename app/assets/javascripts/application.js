@@ -4,3 +4,4 @@
 //= require popper
 //= require bootstrap
 //= require active-menu
+//= require create-lesson

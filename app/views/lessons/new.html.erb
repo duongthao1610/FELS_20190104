@@ -1,0 +1,8 @@
+<% provide :title, "Learn a lesson" %>
+<% provide :button_text, "Save" %>
+<h1> Learn a lesson </h1>
+<div class="row">
+  <%= form_for @lesson do |f| %>
+    <%= render "form", f: f %>
+  <% end %>
+</div>
