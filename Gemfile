@@ -15,7 +15,6 @@ gem "bootstrap", ">= 4.2.1"
 gem "config"
 gem "ffaker"
 gem "pagy"
-gem "mysql2"
 gem "rails-ujs"
 gem "jquery-rails"
 gem "i18n-js"
@@ -28,6 +27,7 @@ gem "carrierwave"
 gem "public_activity"
 
 group :development, :test do
+  gem "mysql2"
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -47,5 +47,6 @@ end
 
 group :production do
   gem "pg"
+  gem "rails_12factor"
 end
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

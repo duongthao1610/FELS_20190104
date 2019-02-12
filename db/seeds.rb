@@ -10,6 +10,18 @@ User.create! email: "user3@example.com", password:"111111", name: "Ngo Trang Nga
                   image: "course_#{n+1}.jpg"
 end
 
+Course.create!  name: "Basic 4",
+                description: "Description: Basic 4",
+                image: "course_4.jpg"
+
+Course.create!  name: "Basic 5",
+                description: "Description: Basic 5",
+                image: "course_5.jpg"
+
+Course.create!  name: "Basic 6",
+                description: "Description: Basic 6",
+                image: "course_6.jpg"
+
 Word.create!  content: "Apple",
               course_id: 1
 
