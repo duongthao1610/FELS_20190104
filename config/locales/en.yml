@@ -82,6 +82,8 @@ en:
       search_icon: "search"
       lessons: "Lessons"
       user: "User"
+      profile: "Profile"
+      logout: "Logout"
 
   courses:
     index:
