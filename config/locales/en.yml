@@ -11,6 +11,8 @@ en:
       learning_condition: "Learning condition"
       alphabet: "Alphabet"
       course: "Course"
+      learned: "Learned"
+      unlearned: "Unlearned"
 
   courses:
     index:

@@ -1,4 +1,4 @@
 <tr>
   <td class="text-c"><%= word.content %>
-  <td class="text-c"><%= word.correct_answer.content %>
+  <td class="text-c"><%= @word_with_users[word.id] || 0 %>
 </tr>
